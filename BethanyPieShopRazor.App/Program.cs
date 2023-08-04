@@ -1,5 +1,6 @@
 using BethanyPieShopRazor.App;
 using BethanyPieShopRazor.App.Services;
+using Blazored.LocalStorage;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 
@@ -9,5 +10,8 @@ builder.RootComponents.Add<HeadOutlet>("head::after");
 
 builder.Services.AddHttpClient<IEmployeeDataService, EmployeeDataService>(
     client => client.BaseAddress = new Uri(builder.HostEnvironment.BaseAddress));
+
+builder.Services.AddScoped<ApplicationState>();
+builder.Services.AddBlazoredLocalStorage();
 
 await builder.Build().RunAsync();
