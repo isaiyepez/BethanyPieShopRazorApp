@@ -16,7 +16,7 @@ namespace BethanyPieShopRazor.App.Pages
         protected override async Task OnInitializedAsync()
         {
             //Employees = MockDataService.Employees;
-            Employees = (await EmployeeDataService.GetAllEmployees()).ToList();
+            Employees = (await EmployeeDataService.GetAllEmployees(false)).ToList();
         }
 
         public void ShowQuickViewPopup(Employee selectedEmployee)
