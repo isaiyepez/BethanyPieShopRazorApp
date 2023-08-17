@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <SupportedPlatform Include="browser" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="7.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\leaflet\images\layers-2x.png" />
+    <None Include="wwwroot\leaflet\images\layers.png" />
+    <None Include="wwwroot\leaflet\images\marker-icon-2x.png" />
+    <None Include="wwwroot\leaflet\images\marker-icon.png" />
+    <None Include="wwwroot\leaflet\images\marker-shadow.png" />
+    <None Include="wwwroot\leaflet\leaflet.css" />
+    <None Include="wwwroot\leaflet\leaflet.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BethanysPieShopHRM.Shared\BethanysPieShopHRM.Shared.csproj" />
+  </ItemGroup>
+
+</Project>
