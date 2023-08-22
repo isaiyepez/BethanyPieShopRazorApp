@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BethanysPieShopHRM.Shared",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BethanyPieShopRazor.API", "BethanyPieShopRazor.API\BethanyPieShopRazor.API.csproj", "{1485C94E-946F-45C3-B3F5-E9FAF43234C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BethanysPieShopHRM.ComponentsLibrary", "BethanysPieShopHRM.ComponentsLibrary\BethanysPieShopHRM.ComponentsLibrary.csproj", "{672DE10F-1F20-4E55-8B1F-86FD3438349B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BethanysPieShopHRM.ComponentsLibrary", "BethanysPieShopHRM.ComponentsLibrary\BethanysPieShopHRM.ComponentsLibrary.csproj", "{672DE10F-1F20-4E55-8B1F-86FD3438349B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

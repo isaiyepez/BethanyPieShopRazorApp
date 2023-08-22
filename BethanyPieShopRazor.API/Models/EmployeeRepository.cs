@@ -19,7 +19,8 @@ namespace BethanyPieShopRazor.API.Models
 
         public Employee GetEmployeeById(int employeeId)
         {
-            return _appDbContext.Employees.FirstOrDefault(c => c.EmployeeId == employeeId);
+            return _appDbContext.Employees
+                .FirstOrDefault(c => c.EmployeeId == employeeId);
         }
 
         public Employee AddEmployee(Employee employee)
@@ -31,7 +32,8 @@ namespace BethanyPieShopRazor.API.Models
 
         public Employee UpdateEmployee(Employee employee)
         {
-            var foundEmployee = _appDbContext.Employees.FirstOrDefault(e => e.EmployeeId == employee.EmployeeId);
+            var foundEmployee = _appDbContext.Employees
+                .FirstOrDefault(e => e.EmployeeId == employee.EmployeeId);
 
             if (foundEmployee != null)
             {
@@ -64,7 +66,8 @@ namespace BethanyPieShopRazor.API.Models
 
         public void DeleteEmployee(int employeeId)
         {
-            var foundEmployee = _appDbContext.Employees.FirstOrDefault(e => e.EmployeeId == employeeId);
+            var foundEmployee = _appDbContext.Employees
+                .FirstOrDefault(e => e.EmployeeId == employeeId);
             if (foundEmployee == null) return;
 
             _appDbContext.Employees.Remove(foundEmployee);
